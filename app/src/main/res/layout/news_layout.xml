@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Ваш текущий макет -->
+
+        <TextView
+            android:id="@+id/text_title"
+            android:text="@string/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/text_description"
+            android:text="@string/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/image_news"
+            android:background="@drawable/test"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/text_author"
+            android:text="@string/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <!-- Иконка удаления внутри LinearLayout, справа -->
+        <ImageView
+            android:id="@+id/image_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

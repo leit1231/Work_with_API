@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Создание новой новости"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewCreateNews"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewNews"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo_back"
+        android:layout_below="@id/textViewCreateNews"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewNews"
+        android:layout_marginTop="16dp"
+        android:hint="Введите заголовок новости"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTitle"
+        android:layout_marginTop="8dp"
+        android:hint="Введите описание новости"
+        android:lines="4"
+        android:maxLines="4" />
+
+    <EditText
+        android:id="@+id/editTextUserID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDescription"
+        android:layout_marginTop="8dp"
+        android:hint="Введите ID пользователя"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUserID"
+        android:layout_marginTop="16dp"
+        android:text="Отмена"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUserID"
+        android:layout_marginTop="16dp"
+        android:text="Сохранить"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

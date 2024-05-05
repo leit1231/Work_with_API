@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- Изображение -->
+    <ImageView
+        android:id="@+id/image_anons"
+        android:background="@drawable/test"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Основная информация -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:text="@string/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/text_description"
+            android:text="@string/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/text_price"
+            android:text="@string/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/text_author"
+            android:text="@string/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"/>
+
+</LinearLayout>

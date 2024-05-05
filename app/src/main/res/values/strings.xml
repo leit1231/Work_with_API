@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="news">Новости</string>
+    <string name="anons">Объявления</string>
+    <string name="users">Пользователи</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="test">тест</string>
+    <string name="price">Цена</string>
+</resources>
