@@ -2,5 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="main">#00FFFF</color>
+    <color name="main">#054CD4</color>
+    <color name="selected_nav_item_color">#03A9F4</color>
+
 </resources>

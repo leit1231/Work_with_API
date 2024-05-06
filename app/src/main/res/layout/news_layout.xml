@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/card_background"
     android:padding="16dp">
 
     <LinearLayout
@@ -9,16 +10,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Ваш текущий макет -->
-
         <TextView
             android:id="@+id/text_title"
             android:text="@string/test"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@android:color/black"
+            android:textColor="@color/black"
             android:layout_marginBottom="8dp"/>
 
         <TextView
@@ -34,20 +33,34 @@
             android:id="@+id/image_news"
             android:background="@drawable/test"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="200dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:layout_marginBottom="8dp"/>
 
-        <TextView
-            android:id="@+id/text_author"
-            android:text="@string/test"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:textColor="@android:color/black"/>
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
 
-        <!-- Иконка удаления внутри LinearLayout, справа -->
+            <TextView
+                android:id="@+id/text_author_label"
+                android:text="Автор: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text_author"
+                android:text="@string/test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
         <ImageView
             android:id="@+id/image_delete"
             android:layout_width="wrap_content"
@@ -59,3 +72,5 @@
     </LinearLayout>
 
 </RelativeLayout>
+
+

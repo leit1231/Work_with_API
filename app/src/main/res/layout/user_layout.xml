@@ -3,8 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
-
+    android:padding="16dp"
+    android:background="@drawable/card_background"
+    android:elevation="4dp"
+    android:outlineSpotShadowColor="#F0F0F0"
+    android:outlineAmbientShadowColor="#F0F0F0"
+    android:clipToPadding="false"
+    android:clipChildren="false">
 
     <!-- Контейнер для пользователя -->
     <LinearLayout
@@ -15,19 +20,21 @@
         <!-- Аватар пользователя -->
         <ImageView
             android:id="@+id/image_avatar"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/test"
-            android:layout_marginEnd="16dp"/>
+            android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/test"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/avatar_background"/>
 
         <!-- Информация о пользователе -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center_vertical"> <!-- Прикрепляем имя пользователя к верху -->
 
             <!-- ФИО пользователя -->
             <TextView
@@ -38,9 +45,13 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@android:color/black"
-                android:layout_marginBottom="8dp"/>
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="4dp"/> <!-- Отступ сверху -->
 
         </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
+
+
+

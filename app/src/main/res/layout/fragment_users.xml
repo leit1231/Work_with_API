@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
     tools:context=".fragments.NewsFragment">
 
     <TextView
@@ -14,7 +15,8 @@
         android:textStyle="bold"
         android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true"
-        android:padding="16dp"/>
+        android:padding="16dp"
+        android:textColor="@color/white"/>
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/svo"
@@ -23,10 +25,11 @@
         android:layout_below="@id/text_news_title"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="Поиск пользователя по id"
+        android:background="@drawable/searchview_background"
         android:iconifiedByDefault="false"
         android:minHeight="48dp"
-        android:padding="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
         android:queryHint="Поиск пользователей" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -34,6 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/svo"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         tools:listitem="@layout/user_layout"/>
 
 </RelativeLayout>

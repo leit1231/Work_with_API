@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.NewsFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.NewsFragment"
+    android:background="@drawable/background_gradient">
 
     <TextView
         android:id="@+id/text_news_title"
@@ -14,16 +16,19 @@
         android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:padding="16dp"/>
+        android:padding="16dp"
+        android:textColor="@color/white"/>
 
+    <!-- RecyclerView для отображения данных -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewNews"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/text_news_title"
-        android:layout_above="@+id/btn_add_news"
-        tools:listitem="@layout/news_layout"/>
+        android:padding="8dp"
+        tools:listitem="@layout/news_layout" />
 
+    <!-- Кнопка добавления новости -->
     <ImageButton
         android:id="@+id/btn_add_news"
         android:layout_width="50dp"
@@ -33,6 +38,11 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/ic_add"/>
+        android:src="@drawable/ic_add"
+        app:tint="@color/white"/>
 
 </RelativeLayout>
+
+
+
+
